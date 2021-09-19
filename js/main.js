@@ -35,11 +35,3 @@ if (animItems.length > 0) {
     }, 300);
 }
 
-let solutions = document.getElementsByClassName("solutions-item");
-for (let i = 0; i < solutions.length; i++) {
-    solutions[i].onclick = function () {
-        let parent = solutions[i];
-        let child = parent.getElementsByClassName('.solution-description')
-        child.style.display = 'block'
-    }
-}
