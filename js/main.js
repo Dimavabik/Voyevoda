@@ -30,6 +30,16 @@ if (animItems.length > 0) {
         return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
     }
 
-    setTimeout(()=>{animOnScroll()}, 300);
+    setTimeout(() => {
+        animOnScroll()
+    }, 300);
 }
 
+let solutions = document.getElementsByClassName("solutions-item");
+for (let i = 0; i < solutions.length; i++) {
+    solutions[i].onclick = function () {
+        let parent = solutions[i];
+        let child = parent.getElementsByClassName('.solution-description')
+        child.style.display = 'block'
+    }
+}
