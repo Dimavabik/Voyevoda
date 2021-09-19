@@ -31,9 +31,18 @@ window.onload = function () {
             return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
         }
 
-        setTimeout(() => {
-            animOnScroll()
-        }, 300);
+        setTimeout(()=>{animOnScroll()}, 300);
     }
+
+    // let allSolutions = $('.solutions-item')
+    // let allSolutionsIndex=0;
+    //
+    // for (let i=0; i<allSolutions.length; i++){
+    //     $($(allSolutions)[i]).click(function (event) {
+    //         $($(allSolutions)[i]).children(".solution-description").css('display','block')
+    //         allSolutionsIndex+=1;
+    //     })
+    //
+    // }
 
 }
