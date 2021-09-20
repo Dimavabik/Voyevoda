@@ -3,6 +3,68 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    #scroll {
+        margin-right: 50px;
+    }
+
+    #about-us {
+        padding: 0 20px;
+    }
+
+    #about-us-container {
+        justify-content: flex-start;
+    }
+
+    #about-us-container #about-us-img {
+        flex-grow: 1;
+    }
+
+    #about-us-img img {
+        left: -50px;
+    }
+
+    #about-us-info {
+        flex-shrink: 0;
+    }
+
+    #solutions {
+        padding: 0 20px;
+    }
+
+    #contacts {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #scroll {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1009px) {
+    #scroll {
+        margin-right: 0;
+    }
+
+    #main-menu-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    #main-menu-container #menu-items {
+        justify-content: space-around;
+        margin-bottom: 65px;
+        width: 100%;
+    }
+
+    #main-menu-container #menu-items .menu-item {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -12,14 +74,9 @@
     }
 
     #main-menu-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        position: relative;
-        z-index: 2;
     }
 
     #main-menu-container #menu-items {
@@ -50,19 +107,87 @@
         max-width: 472px;
         text-align: center;
     }
-    #about-us-img{
+
+    #about-us-img {
         position: relative;
         width: 100%;
         margin-top: 45px;
     }
-    #about-us-img img{
+
+    #about-us-img img {
         width: 110%;
         position: relative;
         left: -5%;
         top: 0;
     }
-    #about-us-info p{
+
+    #about-us-info p {
         margin-bottom: 45px;
+    }
+
+    #solutions-container {
+        padding: 200px 0 140px 0;
+    }
+
+    #solutions-container h2 {
+        margin: 0 0 120px 0;
+        text-align: center;
+    }
+
+    #solutions-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    #solutions-items .solutions-item {
+        width: 100%;
+        margin: 0 0 60px 0;
+    }
+
+    #contacts {
+        padding-bottom: 147px;
+    }
+
+    #contacts-container h3 {
+        text-align: center;
+        margin-bottom: 83px;
+    }
+
+    #form-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #contacts-information {
+        text-align: center;
+        margin: 0 auto 89px auto;
+
+    }
+
+    #contacts-information div:not(:last-child) {
+        margin-left: 0;
+    }
+
+    #form-container form {
+        width: 480px;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form-container form button {
+        border: 1px solid #996E1C;
+        border-radius: 5px;
+        width: 176px;
+        height: 48px;
+        background: transparent;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        align-self: center;
     }
 
 }
