@@ -1,0 +1,35 @@
+@media screen and (max-width: 1239px) {
+    #main #main-menu-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #main {
+        padding: 80px 0 80px 0;
+        background-image: url("../images/main_photo_solders_768.png");
+    }
+
+    #main-menu-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 2;
+    }
+    #main-menu-container #menu-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    #main-menu-container #menu-items .menu-item{
+        margin-right: 0;
+        margin-bottom: 65px;
+    }
+    #scroll{
+        margin: 85px 0 0 0;
+    }
+}
