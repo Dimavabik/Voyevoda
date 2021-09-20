@@ -45,6 +45,9 @@
 }
 
 @media screen and (max-width: 1009px) {
+    #main{
+        padding-bottom: 50px;
+    }
     #scroll {
         margin-right: 0;
     }
