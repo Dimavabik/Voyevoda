@@ -40,6 +40,9 @@
     }
 }
 @media screen and (max-width: 1109px){
+    #solutions-container{
+        padding-bottom: 150px;
+    }
     #solutions-items{
         max-width: 1000px;
     }
@@ -56,7 +59,7 @@
     #form-container form{
         max-width: 480px;
     }
-    #form-container #contacts-information div {
+    #form-container #contacts-information div:not(:last-child) {
         margin-left: 0;
     }
 }
@@ -84,15 +87,19 @@
 
     #main-menu-container #menu-items {
         justify-content: space-around;
-        margin-bottom: 65px;
+        margin-bottom: 50px;
         width: 100%;
     }
 
     #main-menu-container #menu-items .menu-item {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
-
+@media screen and (max-width: 840px){
+    .menu-item{
+        width: 220px;
+    }
+}
 @media screen and (max-width: 767px) {
     #main {
         padding: 80px 0 80px 0;
@@ -111,6 +118,7 @@
     }
 
     #main-menu-container #menu-items .menu-item {
+        width: 250px;
         margin-right: 0;
         margin-bottom: 65px;
     }

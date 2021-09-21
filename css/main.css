@@ -116,7 +116,7 @@ header .logo._active {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
     z-index: 2;
@@ -132,6 +132,7 @@ header .logo._active {
     margin-right: 40px;
     color: white;
     font-size: 18px;
+    width: 250px;
 }
 
 .menu-item-number {
@@ -141,7 +142,6 @@ header .logo._active {
 
 .menu-item-name {
     padding: 16px 0;
-    width: 250px;
 }
 
 .menu-item-line {
@@ -210,11 +210,11 @@ header .logo._active {
 
 @keyframes scroll-animation-two {
     0% {
-        transform: translate(0, -15px);
+        transform: translate(0, 0px);
     }
 
     100% {
-        transform: translate(0, 15px);
+        transform: translate(0, 30px);
     }
 }
 
