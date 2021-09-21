@@ -31,10 +31,21 @@
     #solutions {
         padding: 0 20px;
     }
-
-    #contacts {
+    #contacts #contacts-title{
+        padding-left: 20px;
+    }
+    #contacts  #form-container{
         padding-right: 20px;
         padding-left: 20px;
+    }
+}
+@media screen and (max-width: 1109px){
+    #solutions-items{
+        max-width: 1000px;
+    }
+    #solutions-items .solutions-item{
+        width: 50%;
+        margin: 35px 0;
     }
 }
 
