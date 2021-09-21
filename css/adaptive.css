@@ -47,6 +47,18 @@
         width: 50%;
         margin: 35px 0;
     }
+    #form-container{
+        justify-content: space-between;
+    }
+    #form-container form{
+        margin-right: 30px;
+    }
+    #form-container form{
+        max-width: 480px;
+    }
+    #form-container #contacts-information div {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 1023px) {
