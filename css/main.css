@@ -235,7 +235,15 @@ header .logo._active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 200px 0 205px 0;
+    padding: 150px 0 150px 0;
+}
+
+#about-us-info-title._active {
+    font-size: 45px;
+    font-family: "Muller Medium", sans-serif;
+    color: #996E1C;
+    transform: scale(1) translateX(0);
+    opacity: 1;
 }
 
 #about-us-info-title {
@@ -246,12 +254,6 @@ header .logo._active {
     transition: all 1.2s ease;
 }
 
-#about-us-info-title._active {
-    font-family: "Muller Medium", sans-serif;
-    color: #996E1C;
-    transform: scale(1) translateX(0);
-    opacity: 1;
-}
 
 #about-us-info {
     font-size: 15px;
@@ -270,13 +272,14 @@ header .logo._active {
 }
 
 
-#about-us-info div {
+#about-us-info-text div {
+    color: white;
     margin: 0 0 48px 0;
     line-height: 20px;
     font-family: "Muller Regular", sans-serif;
 }
 
-#about-us-info div span {
+#about-us-info-text div span {
     font-family: "Muller Bold", sans-serif;
 }
 
@@ -315,7 +318,7 @@ header .logo._active {
 #solutions-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 200px 0 17px 0;
+    padding: 150px 0 17px 0;
 }
 
 #solutions #solutions-title {
