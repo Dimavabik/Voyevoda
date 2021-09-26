@@ -225,6 +225,8 @@ header .logo._active {
 #about-us {
     background-color: #060503;
     overflow: hidden;
+    font-family: "Muller Medium", sans-serif;
+    color: #996E1C;
 }
 
 #about-us-container {
@@ -237,9 +239,18 @@ header .logo._active {
 }
 
 #about-us-info-title {
-    font-family: "Muller Medium", sans-serif;
     font-size: 45px;
     margin-bottom: 100px;
+    transform: scale(2) translateX(-200px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+#about-us-info-title._active {
+    font-family: "Muller Medium", sans-serif;
+    color: #996E1C;
+    transform: scale(1) translateX(0);
+    opacity: 1;
 }
 
 #about-us-info {
@@ -249,6 +260,7 @@ header .logo._active {
 }
 
 #about-us-info-text {
+    font-family: "Muller Regular", sans-serif;
     opacity: 0;
     transition: all 2s linear;
 }
@@ -257,23 +269,14 @@ header .logo._active {
     opacity: 1;
 }
 
-#about-us-info-title {
-    transform: translateX(-100%);
-    transition: all 1s ease;
-}
 
-#about-us-info-title._active {
-    animation: title 1s;
-    transform: translateX(0);
-}
-
-#about-us-info p {
+#about-us-info div {
     margin: 0 0 48px 0;
     line-height: 20px;
     font-family: "Muller Regular", sans-serif;
 }
 
-#about-us-info p span {
+#about-us-info div span {
     font-family: "Muller Bold", sans-serif;
 }
 
@@ -303,20 +306,11 @@ header .logo._active {
     background: #17110a;
 }
 
-#solutions h2._active {
-    animation: title 1s;
+#solutions #solutions-title._active {
+    transform: scale(1) translateX(0);
+    opacity: 1;
 }
 
-@keyframes title {
-    0% {
-        transform: scale(2);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
 
 #solutions-container {
     max-width: 1200px;
@@ -329,6 +323,9 @@ header .logo._active {
     font-size: 45px;
     font-family: "Muller Medium", sans-serif;
     color: #996E1C;
+    transform: scale(2) translateX(-200px);
+    opacity: 0;
+    transition: all 1.2s ease;
 }
 
 #solutions-items {
@@ -357,6 +354,7 @@ header .logo._active {
 .solutions-item.selected .solutions-item-line::before {
     transform: translateX(0);
 }
+
 .solutions-item.selected .solutions-item-img:before {
     transform: translateY(0);
 }
@@ -561,7 +559,7 @@ header .logo._active {
 #contacts {
     position: relative;
     background: black;
-    padding-bottom: 137px;
+    padding-bottom: 100px;
     overflow: hidden;
 }
 
@@ -584,15 +582,19 @@ header .logo._active {
     padding: 200px 0 185px 0;
 }
 
-#contacts-container h3 {
+#contacts-title {
     margin: 0 0 85px 0;
     font-family: "Muller Medium", sans-serif;
     font-size: 45px;
     color: #996E1C;
+    transform: scale(2) translateX(-200px);
+    opacity: 0;
+    transition: all 1.2s ease;
 }
 
-#contacts-container h3._active {
-    animation: title 1s;
+#contacts-title._active {
+    transform: scale(1) translateX(0px);
+    opacity: 1;
 }
 
 #form-container {

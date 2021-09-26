@@ -36,7 +36,9 @@ window.onload = function () {
                 if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
                     animItem.classList.add('_active')
                 } else {
-                    animItem.classList.remove('_active')
+                    if (animItem.classList.contains('infinity-animation')) {
+                        animItem.classList.remove('_active')
+                    }
                 }
             }
         }
