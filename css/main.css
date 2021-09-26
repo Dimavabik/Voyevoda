@@ -562,6 +562,7 @@ header .logo._active {
     position: relative;
     background: black;
     padding-bottom: 137px;
+    overflow: hidden;
 }
 
 #contacts:before {
