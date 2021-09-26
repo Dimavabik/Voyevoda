@@ -1,6 +1,23 @@
 window.onload = function () {
-    let animItems = document.getElementsByClassName('animateItems');
 
+    $('.solutions-item, .solutions-item-name, .solutions-item-full-name, .solutions-item-line').click((e) => {
+        $('.solution-description').hide();
+        $('.solutions-item').removeClass('selected');
+        let currentElement = $(e.target);
+        let id = currentElement.data('id');
+        $('#' + id).show();
+        currentElement.parents('.solutions-item').addClass('selected');
+    });
+
+
+    $('#solutions, #solutions-container, #solutions-items, #solutions-title').click((e) => {
+        if (e.target.id === 'solutions' || e.target.id === 'solutions-container' || e.target.id === 'solutions-items' || e.target.id === "solutions-title") {
+            $('.solution-description').hide();
+            $('.solutions-item').removeClass('selected');
+        }
+    });
+
+    let animItems = document.getElementsByClassName('animateItems');
 
     if (animItems.length > 0) {
         window.addEventListener('scroll', animOnScroll)
@@ -31,18 +48,10 @@ window.onload = function () {
             return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
         }
 
-        setTimeout(()=>{animOnScroll()}, 300);
+        setTimeout(() => {
+            animOnScroll()
+        }, 300);
     }
 
-    // let allSolutions = $('.solutions-item')
-    // let allSolutionsIndex=0;
-    //
-    // for (let i=0; i<allSolutions.length; i++){
-    //     $($(allSolutions)[i]).click(function (event) {
-    //         $($(allSolutions)[i]).children(".solution-description").css('display','block')
-    //         allSolutionsIndex+=1;
-    //     })
-    //
-    // }
 
 }

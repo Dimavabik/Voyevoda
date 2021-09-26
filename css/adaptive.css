@@ -68,6 +68,65 @@
     #scroll {
         margin-right: 50px;
     }
+    /*#solutions-items .solutions-item:first-child {*/
+    /*    transform: translateX(-200%);*/
+    /*    opacity: 0;*/
+    /*    transition: all 1s ease;*/
+    /*}*/
+    /*#solutions-items .solutions-item:first-child._active{*/
+    /*    transform: translateX(0);*/
+    /*    opacity: 1;*/
+    /*}*/
+
+    /*#solutions-items .solutions-item:nth-child(2){*/
+    /*    transform: translateX(-200%);*/
+    /*    opacity: 0;*/
+    /*    transition: all 1s ease;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(2)._active{*/
+    /*    transform: translateX(0);*/
+    /*    opacity: 1;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(3){*/
+    /*    transform: translateX(-200%);*/
+    /*    opacity: 0;*/
+    /*    transition: all 1s ease;*/
+    /*    transition-delay: 0.15s;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(3)._active{*/
+    /*    transform: translateX(0);*/
+    /*    opacity: 1;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(4){*/
+    /*    transform: translateX(-200%);*/
+    /*    opacity: 0;*/
+    /*    transition: all 1s ease;*/
+    /*    transition-delay: 0.15s;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(4)._active{*/
+    /*    transform: translateX(0);*/
+    /*    opacity: 1;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(5){*/
+    /*    transform: translateX(-200%);*/
+    /*    opacity: 0;*/
+    /*    transition: all 1s ease;*/
+    /*    transition-delay: 0.3s;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(5)._active{*/
+    /*    transform: translateX(0);*/
+    /*    opacity: 1;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(6){*/
+    /*    transform: translateX(-200%);*/
+    /*    opacity: 0;*/
+    /*    transition: all 1s ease;*/
+    /*    transition-delay: 0.3s;*/
+    /*}*/
+    /*#solutions-items .solutions-item:nth-child(6)._active{*/
+    /*    transform: translateX(0);*/
+    /*    opacity: 1;*/
+    /*}*/
 }
 
 @media screen and (max-width: 1009px) {
@@ -94,6 +153,41 @@
 
     #main-menu-container #menu-items .menu-item {
         margin-right: 0;
+    }
+    #contacts{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 960px){
+    #solutions-container{
+        padding-top: 130px;
+    }
+    #contacts-container{
+        padding-top: 130px;
+        padding-bottom: 120px;
+    }
+    #contacts-container h3 {
+        text-align: center;
+        margin-bottom: 83px;
+    }
+
+    #form-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #contacts-information {
+        text-align: center;
+        margin: 0 auto 89px auto;
+
+    }
+
+    #form-container form {
+        margin-right: 0;
+    }
+
+    #form-container form button {
+        align-self: center;
     }
 }
 @media screen and (max-width: 840px){
@@ -129,13 +223,10 @@
     }
 
     #about-us-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
         justify-content: flex-start;
         flex-direction: column;
         align-items: center;
-        padding: 200px 0 85px 0;
+        padding: 130px 0 85px 0;
     }
 
     #about-us-info {
@@ -182,47 +273,5 @@
         margin: 0 0 60px 0;
     }
 
-    #contacts {
-        padding-bottom: 147px;
-    }
-
-    #contacts-container h3 {
-        text-align: center;
-        margin-bottom: 83px;
-    }
-
-    #form-container {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    #contacts-information {
-        text-align: center;
-        margin: 0 auto 89px auto;
-
-    }
-
-    #contacts-information div:not(:last-child) {
-        margin-left: 0;
-    }
-
-    #form-container form {
-        width: 480px;
-        margin-right: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #form-container form button {
-        border: 1px solid #996E1C;
-        border-radius: 5px;
-        width: 176px;
-        height: 48px;
-        background: transparent;
-        color: white;
-        font-size: 15px;
-        cursor: pointer;
-        align-self: center;
-    }
 
 }
