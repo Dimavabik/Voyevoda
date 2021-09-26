@@ -299,6 +299,7 @@ header .logo._active {
 
 /*Третий блок*/
 #solutions {
+    overflow: hidden;
     background: #17110a;
 }
 
